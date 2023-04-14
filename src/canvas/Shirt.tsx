@@ -7,8 +7,8 @@ import state from "../store";
 
 const Shirt = () => {
   const snap = useSnapshot(state);
+  // @ts-expect-error - Incomplete GLTF Type
   const { nodes, materials } = useGLTF("/shirt_baked.glb");
-  console.log(nodes, materials);
 
   const logoTexture = useTexture(snap.logoDecal);
   const fullTexture = useTexture(snap.fullDecal);
