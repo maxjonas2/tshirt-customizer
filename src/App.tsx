@@ -7,7 +7,9 @@ const App = () => {
     <main className='app transition-all ease-in'>
       <Home />
       <Customizer />
-      <Canvas />
+      <div className='absolute inset-20'>
+        <Canvas />
+      </div>
     </main>
   );
 };

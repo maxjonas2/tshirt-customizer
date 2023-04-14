@@ -27,10 +27,10 @@ const Customizer = () => {
         <>
           <motion.section
             key='custom'
-            className='absolute top-0 left-0 w-screen'
+            className='absolute top-0 left-0 w-screen '
             {...slideAnimation("right")}
           >
-            <div className='flex items-center min-h-screen'>
+            <div className='flex items-center min-h-screen z-10 '>
               <motion.div
                 className='editortabs-container tabs'
                 {...fadeAnimation}
@@ -40,7 +40,7 @@ const Customizer = () => {
                 ))}
               </motion.div>
             </div>
-            <motion.div className='absolute top-5 right-5'>
+            <motion.div className='absolute top-5 right-5 z-10'>
               <CustomButton
                 title='Go Back'
                 onClick={() => (state.intro = true)}
